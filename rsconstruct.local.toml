@@ -1,0 +1,24 @@
+# Repo-specific overlay. Deep-merged over the canonical rsconstruct.toml.
+
+# README.md renders from tera.templates/README.md.tera, loading config/*.lua
+# with load_lua (the pyanyzip pattern). The pydmt mako templates are gone.
+[processor.tera]
+src_dirs = ["tera.templates"]
+
+# The generator drives scripts/guile_build.py, which compiles each demo with
+# `guild compile` into out/ — the demos never got compiled or checked by the
+# old Makefile (its `all` target was a no-op), so this is the first real
+# validation the .scm files get.
+[processor.generator.guile]
+command = "scripts/guile_build.py"
+src_dirs = ["src"]
+src_extensions = [".scm"]
+output_dir = "out"
+output_extension = "go"
+batch = false
+
+# guild (from guile-3.0) compiles the demos.
+[dependencies]
+system = [
+    "guile-3.0",
+]
