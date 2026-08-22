@@ -17,8 +17,10 @@ output_dir = "out"
 output_extension = "go"
 batch = false
 
-# guild (from guile-3.0) compiles the demos.
+# guild compiles the demos. The unversioned /usr/bin/guild is an alternatives
+# slave registered by guile-3.0-dev, not guile-3.0, so the -dev package is the
+# real dependency (it pulls in guile-3.0 itself).
 [dependencies]
 system = [
-    "guile-3.0",
+    "guile-3.0-dev",
 ]
