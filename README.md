@@ -1,11 +1,11 @@
 <!-- This file is generated. Do not edit it by hand: your changes will be
      lost on the next build. Edit the template it is rendered from, or the
      values that template reads, and build again. -->
-# *demos-guile* project by Mark Veltzer
+# *demos-lang-guile* project by Mark Veltzer
 
 description: Demos for the guile programming language
 
-project website: https://veltzer.github.io/demos-guile
+project website: https://veltzer.github.io/demos-lang-guile
 
 author: Mark Veltzer
 
@@ -15,11 +15,11 @@ version: 0.0.1
 
 ## github
 
-![License](https://img.shields.io/github/license/veltzer/demos-guile)
+![License](https://img.shields.io/github/license/veltzer/demos-lang-guile)
 
 ## build
 
-![build](https://github.com/veltzer/demos-guile/workflows/build/badge.svg)
+![build](https://github.com/veltzer/demos-lang-guile/workflows/build/badge.svg)
 ## Number of examples
 
 Currently there are 1 examples in this repo.
