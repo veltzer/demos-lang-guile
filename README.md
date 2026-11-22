@@ -5,7 +5,7 @@
 
 description: Demos for the guile programming language
 
-project website: https://veltzer.github.io/demos-lang-guile
+project website: <https://veltzer.github.io/demos-lang-guile>
 
 author: Mark Veltzer
 
